@@ -1,0 +1,14 @@
+{
+  "name" : "clean_wiki",
+  "version" : "1.0",
+  "description" : "removes jimmy wales message from wiki page",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://en.wikipedia.org/*"
+      ],
+      "js" : ["contentscript.js"],
+      "run_at" : "document_end"
+    }
+  ]
+}
