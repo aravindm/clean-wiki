@@ -1,3 +1,5 @@
-var sideNotice = document.getElementById("siteNotice");
-var parentOfSideNotice = document.getElementById("siteNotice").parentNode;
-parentOfSideNotice.removeChild(sideNotice);
+var siteNotice = document.getElementById("siteNotice");
+if(siteNotice != null){
+	var parentOfSiteNotice = siteNotice.parentNode;
+	parentOfSiteNotice.removeChild(siteNotice);
+}
